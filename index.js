@@ -19,7 +19,11 @@ db.on("error", () => {
 });
 
 // Middleware
-const allowedOrigins = ["http://localhost:3000", "http://localhost:3001"];
+const allowedOrigins = [
+  "http://localhost:3000",
+  "http://localhost:3001",
+  "https://billybotfrontend.vercel.app",
+];
 
 app.use(
   cors({
